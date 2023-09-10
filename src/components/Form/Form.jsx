@@ -8,12 +8,12 @@ function Form() {
   });
   const ChangeHandaler = (e) => {
     setForm({
-      ...form,
+        ...form,
       [e.target.name] : [e.target. value]
     })
   }
   const submitHandaler = (e) => {
-    e.preventDefult();
+    e.preventDefault();
     console.log("Login",form)
   }
   return (

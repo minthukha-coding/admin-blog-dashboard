@@ -12,12 +12,10 @@
     justify-content: center;
     align-items: center;
 }
-.expandBtn{
-    border: none;
-    background-color: transparent;
-    margin-top: 3px;
-}
 .icon{
     width: 25px;
     height: 25px;
+}
+.adContainner{
+    font-size: 20px;
 }

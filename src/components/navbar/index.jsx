@@ -5,10 +5,7 @@ function Navbar() {
   return (
     <div className={styles.NavbarConatainner}>
       <div className={styles.logoContainner}>
-        <div>Admin Panel</div>
-        {/* <button className={styles.icon}>
-          <img src="../../../../public/menu.svg" alt="" />
-        </button> */}
+        <div className={styles.adContainner}>Admin Panel</div>
       </div>
       <div className="">
         <div>
