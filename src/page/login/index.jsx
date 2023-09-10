@@ -1,5 +1,7 @@
 import { useContext } from 'react'
 import { LoginContext } from '../../App';
+import Form from '../../components/Form/Form';
+
 
 function Login() {
   const {isLogin,setisLogin} = useContext(LoginContext);
@@ -8,8 +10,8 @@ function Login() {
     setisLogin(false)
   }
   return (
-    <button onClick={LoginHandaler}>Login</button>
+    <Form></Form>
   )
 }
-
+  
 export default Login

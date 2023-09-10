@@ -7,6 +7,16 @@
 .navLinkConatainner a {
     text-decoration: none;
     padding: 20px 15px;
-    display: block;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.logoContainner{
+    width: 20px;
+}
+.mainContainner{
+    display: flex;
+    align-items: center;
 }
