@@ -6,7 +6,7 @@ import Dashboard from './layout/dashboard'
 export const LoginContext = createContext();
 
 function App() {
-  const [isLogin, setisLogin] = useState(true);
+  const [isLogin, setisLogin] = useState(false);
 
   return (
     <>

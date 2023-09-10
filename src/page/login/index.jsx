@@ -3,8 +3,9 @@ import { LoginContext } from '../../App';
 
 function Login() {
   const {isLogin,setisLogin} = useContext(LoginContext);
+
   const LoginHandaler = () => {
-    setisLogin(true)
+    setisLogin(false)
   }
   return (
     <button onClick={LoginHandaler}>Login</button>

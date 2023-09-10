@@ -1,0 +1,12 @@
+.navLinkConatainner{
+    width: 10rem;
+    background-color: rgb(11, 30, 123);
+    list-style: none;
+    height: 88vh;
+}
+.navLinkConatainner a {
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    color: #fff;
+}

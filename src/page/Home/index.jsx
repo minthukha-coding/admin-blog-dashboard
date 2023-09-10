@@ -1,9 +1,13 @@
-import React from 'react'
+import { useContext } from "react";
+import { LoginContext } from "../../App";
+import styles from './style.module.css'
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+  const { isLogin, setisLogin } = useContext(LoginContext);
+  const LogoutHandaler = () => {
+    setisLogin(true);
+  };
+  return <button className={styles.LogoutAdj} onClick={LogoutHandaler}>Logout</button>;
 }
 
-export default Home
+export default Home;

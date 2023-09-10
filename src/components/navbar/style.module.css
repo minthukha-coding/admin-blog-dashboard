@@ -1,0 +1,19 @@
+.NavbarConatainner{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(3, 3, 69);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoContainner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expandBtn{
+    border: none;
+    background-color: transparent;
+    margin-top: 3px;
+}
