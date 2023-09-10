@@ -9,7 +9,7 @@ function Allblog() {
       {postData.map((post) => (
         <Card
           key={post.id}
-          titel={post.titel}
+          title={post.title}
           author={post.author}
           body={post.body}
           img={post.img}
