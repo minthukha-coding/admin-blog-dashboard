@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className={styles.NavbarConatainner}>
       <div className={styles.logoContainner}>
-        <div className={styles.adContainner}>Admin Panel</div>
+        <div className={styles.adContainner}>Admin Pannel</div>
       </div>
       <div className="">
         <div>

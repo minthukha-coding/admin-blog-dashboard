@@ -41,4 +41,25 @@ export const postData = [
         body : "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
         img: "../../../public/ironman.jpg"
     },
+    {
+        id: 7,
+        title: "React",
+        author: "John",
+        body : "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        img: "../../../public/ironman.jpg"
+    },
+    {
+        id: 8,
+        title: "React",
+        author: "John",
+        body : "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        img: "../../../public/ironman.jpg"
+    },
+    {
+        id: 9,
+        title: "React",
+        author: "John",
+        body : "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        img: "../../../public/ironman.jpg"
+    },
 ]

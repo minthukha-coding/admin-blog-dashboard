@@ -1,5 +1,5 @@
 .navLinkConatainner{
-    width: 14rem;
+    min-width: 14rem;
     background-color: #1D224C;
     list-style: none;
     height: 89vh;
