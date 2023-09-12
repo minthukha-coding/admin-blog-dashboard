@@ -16,6 +16,7 @@ function CreateBlogs() {
   };
   return (
     <form className={styles.formConatainner}>
+      <h3>Creat Post</h3>
       <div className={styles.inputContainner}>
         <label htmlFor="title">Title</label>
         <input
@@ -37,14 +38,11 @@ function CreateBlogs() {
           placeholder="Enter Author"
           value={``}
           className={styles.input}
-          onClick={ChangeHandaler}
+          onChange={ChangeHandaler}
         />
       </div>
       <div className={styles.inputContainner}>
-        <label htmlFor="image" className={styles.selectImg}>
-          Select Image
-        </label>{" "}
-        <br />
+        <label className={styles.imgBtn} htmlFor="image">Select Image</label><br />
         <input
           id="image"
           type="file"
@@ -55,6 +53,7 @@ function CreateBlogs() {
         />
       </div>
       <div className={styles.inputContainner}>
+      <label htmlFor="body">Body</label> <br />
         <textarea
           name="body"
           id="body"
