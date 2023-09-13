@@ -3,16 +3,22 @@ import Button from "../../components/button/Button";
 import styles from "./style.module.css";
 
 function CreateBlogs() {
-  const [Form, setForm] = useState({
+  const initialFormData = {
     body: "",
     author: "",
     title: "",
-  });
+  };
+  const [formData, setFormData] = useState(initialFormData);
+
   const ChangeHandaler = (e) => {
     console.log(e.target.value);
+    setFormData({
+      ...formData , 
+      [e.target.name] : e.target.value
+    })
   };
-  const FileHandaler = (e) => {
-    console.log("File");
+    const FileHandaler = (e) => {
+    console.log ("File");
   };
   return (
     <form className={styles.formConatainner}>
@@ -24,9 +30,9 @@ function CreateBlogs() {
           type="text"
           name="title"
           placeholder="Enter Titel"
-          value={``}
+          value={formData.title}
           className={styles.input}
-          onClick={ChangeHandaler}
+          onChange={ChangeHandaler}
         />
       </div>
       <div className={styles.inputContainner}>
@@ -36,24 +42,27 @@ function CreateBlogs() {
           type="text"
           name="author"
           placeholder="Enter Author"
-          value={``}
+          value={formData.author}
           className={styles.input}
           onChange={ChangeHandaler}
         />
       </div>
       <div className={styles.inputContainner}>
-        <label className={styles.imgBtn} htmlFor="image">Select Image</label><br />
+        <label className={styles.imgBtn} htmlFor="image">
+          Select Image
+        </label>
+        <br />
         <input
           id="image"
           type="file"
           name="Image"
-          value={``}
-          onClick={FileHandaler}
+          value=""
+          onChange={FileHandaler}
           hidden={true}
         />
       </div>
       <div className={styles.inputContainner}>
-      <label htmlFor="body">Body</label> <br />
+        <label htmlFor="body">Body</label> <br />
         <textarea
           name="body"
           id="body"

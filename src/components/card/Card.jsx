@@ -1,7 +1,15 @@
 import styles from "./style.module.css";
 import Button from "../button/Button";
+import { useNavigate } from "react-router-dom";
 
 function Card(props) {
+  const Navigate = useNavigate();
+  const editHandaler = (id) => {
+    Navigate(`/Post/${id}`);
+  };
+  const deleteHandaler = (id) => {
+    confirm(`/Are you sure to delete ${id}`)
+  }
   return (
     <>
       <div key={props.id} className={styles.cardConatinner}>
@@ -13,8 +21,19 @@ function Card(props) {
         <div>
           <p>{props.body}</p>
           <div className={styles.btnConatainner}>
-            <button className={styles.editBtn}>Edit</button>
-            <button className={styles.deleteBtn}>Delete</button>
+            <button
+              onClick={() => {
+                editHandaler(props.id);
+              }}
+              className={styles.editBtn}
+            >
+              Edit
+            </button>
+            <button onClick={()=>{
+              deleteHandaler(props.id)
+            }}  className={styles.deleteBtn}>
+              Delete
+            </button>
           </div>
         </div>
       </div>

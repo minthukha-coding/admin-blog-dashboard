@@ -8,6 +8,7 @@ function Allblog() {
     <div className={styles.postContainner}>
       {postData.map((post) => (
         <Card
+          id={post.id}
           key={post.id}
           title={post.title}
           author={post.author}
