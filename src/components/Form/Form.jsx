@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './style.module.css'
+import styles from "./style.module.css";
 
 function Form() {
   const [form, setForm] = useState({
@@ -8,33 +8,48 @@ function Form() {
   });
   const ChangeHandaler = (e) => {
     setForm({
-        ...form,
-      [e.target.name] : [e.target. value]
-    })
-  }
+      ...form,
+      [e.target.name]: [e.target.value],
+    });
+  };
   const submitHandaler = (e) => {
     e.preventDefault();
-    console.log("Login",form)
-  }
+    console.log("Login", form);
+  };
+  const [showPassword, setshowPassword] = useState(false);
+  const showPassHandaler = () => {
+    setshowPassword(!showPassword);
+  };
   return (
     <form onSubmit={submitHandaler} className={styles.formContainner}>
+      <h3 className={styles.formTitle}>Login Form</h3>
       <input
+        className={styles.formInput}
         type="text"
         onChange={ChangeHandaler}
-        className="/"
         name="email"
         value={form.email}
         placeholder="Enter user Email"
       />
       <input
-        type="text"
+        className={styles.formInput}
+        type={showPassword ? "text":"password"}
         onChange={ChangeHandaler}
-        className="/"
         name="password"
         value={form.password}
         placeholder="Enter user Password"
       />
-      <button type="submit" onClick={submitHandaler}>Login</button>
+      <div>
+        <input type="checkbox" onChange={showPassHandaler} id="showPass" />
+        <label htmlFor="showPasss">Show Password</label>
+      </div>
+      <button 
+        type="submit"
+        className={styles.SumbitBtn}
+        onClick={submitHandaler}
+      >
+        Login
+      </button>
     </form>
   );
 }
