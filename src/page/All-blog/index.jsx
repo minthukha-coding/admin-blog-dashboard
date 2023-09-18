@@ -10,7 +10,7 @@ function Allblog() {
   console.log(data,loaging)
   return (
     <div className={styles.postContainner}>
-      {postData.map((post) => (
+      {data.map((post) => (
         <Card
           id={post.id}
           key={post.id}

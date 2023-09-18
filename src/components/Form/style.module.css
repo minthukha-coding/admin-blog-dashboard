@@ -8,12 +8,16 @@
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 30px;
+    /* background-color: #1d224ca6; */
 }
 .formInput{
     width: 70%;
     padding: 10px;
     display: block;
     margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    background-color: #7f7f7f43;
 }
 .SumbitBtn{
     width: 40%;
